@@ -111,10 +111,6 @@ namespace ExamenFinal_Progra2
                 }
             }           
             
-            
-
-
-
         }
 
         protected void LlenarDropdownPartidos()
