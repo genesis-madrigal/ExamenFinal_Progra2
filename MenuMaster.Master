@@ -1,0 +1,44 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MenuMaster.master.cs" Inherits="ExamenFinal_Progra2.MenuMaster" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+  <title>Encuestas SA</title>
+
+    <meta charset="UTF-8">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href="CSS/MyStyle.css" rel="stylesheet" />
+
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+
+
+    <style type="text/css">
+        .auto-style1 {
+            width: 101px;
+            height: 101px;
+        }
+    </style>
+
+
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+           <nav class="nav main-nav nav-pills flex-column flex-sm-row" style="background-color: #E3DADA; color: #315A89">
+           <img src="Images/logo.png" class="auto-style1"/>
+           <a class="linksW flex-sm-fill text-sm-center nav-link align-self-center" href="Inicio.aspx">Inicio</a>
+           <a id="btnEncuesta" class="linksW flex-sm-fill text-sm-center nav-link align-self-center" href="Encuesta.aspx" runat="server">Encuesta</a>            
+           <a id="btnReporte" class="linksW flex-sm-fill text-sm-center nav-link align-self-center" href="Reporte.aspx" runat="server">Reporte de Encuestas</a>
+        </nav>        
+            
+            
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>
